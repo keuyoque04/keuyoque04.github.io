@@ -1,0 +1,21 @@
+body {
+  background-color: #f8fafc;
+}
+
+.hero-photo {
+  max-width: 220px;
+}
+
+.card img {
+  object-fit: cover;
+  max-height: 180px;
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+/* Make sections breathe a bit on small screens */
+section {
+  margin-bottom: 1.5rem;
+}
