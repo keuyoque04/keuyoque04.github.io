@@ -1,22 +1,225 @@
-<!-- FINAL PROJECT -->
-<!-- Create a Personal Portfolio -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Kevin Euyoque :: Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Kevin Euyoque</h1>
-        
-    </header>
+  <!-- Top nav: similar idea to kangstadt, simple text links -->
+  <header class="border-bottom mb-3">
+    <div class="container py-2 d-flex flex-column flex-md-row align-items-md-center">
+      <div class="me-md-auto">
+        <a href="#home" class="text-decoration-none">
+          <span class="fw-bold">Kevin Euyoque</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav small">
+          <li class="nav-item"><a class="nav-link px-2" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#experience">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+
+    <!-- Home / hero section -->
+    <section id="home" class="mb-4">
+      <div class="row g-4">
+        <div class="col-md-3 text-center">
+          <img src="assets/img/kevin-headshot.jpg"
+               alt="Portrait of Kevin Euyoque"
+               class="img-fluid rounded-circle mb-2 hero-photo">
+        </div>
+        <div class="col-md-9">
+          <h1 class="h2 mb-1">Kevin Euyoque</h1>
+          <p class="mb-1">he/him/his</p>
+
+          <h2 class="h6 mb-1">Undergraduate Student · Data Science</h2>
+          <h2 class="h6 mb-1">St. Lawrence University</h2>
+
+          <p class="mt-3">
+            I am a Data Science major at St. Lawrence University with interests in
+            web design, data visualization, and building tools that make complex
+            information easier to understand.
+          </p>
+          <p class="mb-0">
+            On this site, you’ll find a selection of my coursework projects,
+            leadership experience, and other work that reflects who I am as a
+            student, developer, and teammate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section (similar list style) -->
+    <section id="contact" class="mb-4">
+      <h1 class="h3 mb-3">Contact</h1>
+      <ul class="list-unstyled mb-3">
+        <li><strong>Email:</strong> keuyo22@stlawu.edu</li>
+        <li>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">
+            github.com/YOUR_GITHUB_USERNAME
+          </a>
+        </li>
+        <li>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG" target="_blank" rel="noopener">
+            linkedin.com/in/YOUR_LINKEDIN_SLUG
+          </a>
+        </li>
+        <li>
+          <strong>Résumé:</strong>
+          <a href="assets/docs/resume.pdf" target="_blank" rel="noopener">
+            Download PDF
+          </a>
+        </li>
+      </ul>
+
+      <p class="mb-0">
+        For inquiries about internships, research opportunities, or collaborations,
+        you can also reach me using the
+        <a href="contact.html">contact form</a>.
+      </p>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="mb-4">
+      <h1 class="h3 mb-3">About Me</h1>
+
+      <p>
+        I am currently a junior at St. Lawrence University studying Data Science.
+        My coursework spans statistics, programming, and web design, and I enjoy
+        applying what I learn to real projects, from statistical modeling to
+        building responsive websites.
+      </p>
+      <p>
+        Outside of the classroom, I am active in campus life and leadership.
+        I have held leadership roles in student organizations and athletic teams
+        and enjoy creating things that help bring people together—whether that is
+        a website, an event, or a data dashboard.
+      </p>
+
+      <h2 class="h5 mt-3 mb-2">Academic Highlights</h2>
+      <ul>
+        <li>Coursework in Web Design, Database Systems, and Statistical Modeling</li>
+        <li>Hands-on projects using R, Python, and SQL with real-world styled data</li>
+        <li>Experience presenting technical work to both technical and non-technical audiences</li>
+      </ul>
+    </section>
+
+    <!-- Education section -->
+    <section id="education" class="mb-4">
+      <h1 class="h3 mb-3">Education</h1>
+
+      <h2 class="h5 mb-1">St. Lawrence University</h2>
+      <p class="mb-1"><strong>B.S. in Data Science</strong></p>
+      <p class="mb-1">Expected Graduation: May 2026</p>
+      <p class="mb-0">
+        Relevant Courses: Intro to Web Design, Database Systems, Statistics,
+        Probability, Machine Learning, Data Visualization.
+      </p>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="mb-4">
+      <h1 class="h3 mb-3">Skills</h1>
+
+      <h2 class="h5 mb-2">Technical</h2>
+      <ul>
+        <li>HTML5, CSS3, Bootstrap, responsive design</li>
+        <li>Python, R, SQL (PostgreSQL)</li>
+        <li>Git, GitHub, command-line workflows</li>
+      </ul>
+
+      <h2 class="h5 mb-2">Professional</h2>
+      <ul>
+        <li>Team leadership and collaboration</li>
+        <li>Technical communication and documentation</li>
+        <li>Event planning and project organization</li>
+      </ul>
+    </section>
+
+    <!-- Projects section (teaser list, link to full page) -->
+    <section id="projects" class="mb-4">
+      <h1 class="h3 mb-3">Projects</h1>
+
+      <p>
+        Below is a brief selection of projects. Visit the full
+        <a href="projects.html">Projects page</a> for more details.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Injury Prevention and Performance Analysis</strong> —
+          Regression models predicting injury risk from athlete performance metrics.
+        </li>
+        <li>
+          <strong>Books Database</strong> —
+          Designed and populated a normalized PostgreSQL database from a large Kaggle dataset.
+        </li>
+        <li>
+          <strong>SlugFest Microblog</strong> —
+          A Twitter-style microblog interface built as part of CS-3017 using HTML, CSS, and Bootstrap.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experience section -->
+    <section id="experience" class="mb-4">
+      <h1 class="h3 mb-3">Experience</h1>
+
+      <h2 class="h5 mb-1">Leadership & Campus Involvement</h2>
+      <ul>
+        <li>Leadership roles in student organizations and fraternity life</li>
+        <li>Experience coordinating events and collaborating with campus partners</li>
+      </ul>
+
+      <h2 class="h5 mb-1">Work Experience</h2>
+      <p class="mb-0">
+        Replace this text with any jobs, internships, or other roles you have held.
+        You can provide more detail on a dedicated
+        <a href="experience.html">Experience page</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="border-top py-3">
+    <div class="container small text-center">
+      © <span id="year"></span> Kevin Euyoque ·
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
-
-
-
-
 </html>
